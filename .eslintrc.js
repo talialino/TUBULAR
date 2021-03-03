@@ -20,6 +20,7 @@ module.exports = {
         extensions: [".js", ".jsx"],
       },
     ],
+    "react/prop-types": "off",
     "global-require": "off",
     "import/prefer-default-export": "off",
     "no-unused-expressions": ["error", { allowTaggedTemplates: true }],
