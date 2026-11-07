@@ -4,7 +4,7 @@
 
 # Tubular
 
-Aplicativo mobile para acompanhar um módulo com algas que trata e reaproveita água e, ao mesmo tempo, captura CO₂ do ar.<br>
+Aplicativo mobile para acompanhar um módulo com microalgas que trata água para reúso e, ao mesmo tempo, captura CO₂ do ar.<br>
 Criado em um hackathon com tema de meio ambiente, em 2021.
 
 ![React Native](https://img.shields.io/badge/React_Native-0.63-61DAFB?logo=react&logoColor=black)
@@ -21,7 +21,24 @@ Criado em um hackathon com tema de meio ambiente, em 2021.
 
 ## Sobre
 
-O Tubular foi pensado como uma startup: um protótipo físico, instalado no estabelecimento do cliente, que usaria algas para tratar a água e sequestrar gás carbônico do ar. O aplicativo é o painel desse cliente. Nele, o cliente vê quanto CO₂ o módulo capturou e a quantidade e a qualidade da água tratada.
+O Tubular foi pensado como uma startup de tecnologia ambiental. A proposta da equipe era um módulo com **microalgas**, instalado no estabelecimento do cliente, que resolveria dois problemas de uma vez:
+
+- **Tratar a água para reúso:** para crescer, as microalgas consomem os nutrientes da água residual, como nitrogênio e fósforo. Assim, a água fica mais limpa.
+- **Capturar CO₂ do ar:** na fotossíntese, as algas absorvem gás carbônico e liberam oxigênio.
+
+A biomassa de algas gerada no processo ainda pode ser reaproveitada como biofertilizante ou como matéria-prima para biocombustíveis e bioplásticos. Pesquisas e startups pelo mundo usam o mesmo princípio, muitas vezes em fotobiorreatores tubulares.
+
+```mermaid
+flowchart LR
+    AR[Ar com CO₂] --> M
+    AG[Água residual] --> M[Módulo com<br>microalgas]
+    M --> AT[Água tratada<br>para reúso]
+    M --> O2[Oxigênio]
+    M --> B[Biomassa de algas<br>reaproveitável]
+    M -. dados dos sensores .-> APP[App Tubular]
+```
+
+O aplicativo é o painel do cliente. Nele, o cliente vê quanto CO₂ o módulo capturou e a quantidade e a qualidade da água tratada, comparadas ao padrão exigido pela norma. A apresentação do app também previa dicas para reaproveitar as algas.
 
 Eu desenvolvi o aplicativo, da navegação aos gráficos.
 
